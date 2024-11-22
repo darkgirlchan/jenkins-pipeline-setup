@@ -1,0 +1,29 @@
+pipeline {
+    agent any  // El pipeline se puede ejecutar en cualquier agente disponible.
+    
+    stages {
+        // Etapa de construcción
+        stage('Build') {
+            steps {
+                echo 'Compilando el código...'
+                // Aquí se agregarían comandos para construir tu proyecto.
+            }
+        }
+        
+        // Etapa de pruebas
+        stage('Test') {
+            steps {
+                echo 'Ejecutando pruebas...'
+                // Aquí se agregarían comandos para ejecutar las pruebas de tu proyecto.
+            }
+        }
+        
+        // Etapa de despliegue
+        stage('Deploy') {
+            steps {
+                echo 'Desplegando la aplicación...'
+                // Aquí se agregarían comandos para desplegar tu proyecto.
+            }
+        }
+    }
+}
