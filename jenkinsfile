@@ -24,6 +24,6 @@ pipeline {
                 echo 'Desplegando la aplicaciÃ³n...'
                 // AquÃ­ se agregarÃ­an comandos para desplegar tu proyecto.
             }
- Â Â Â Â Â Â Â }
-Â Â Â Â }
+}
+ }
 }
